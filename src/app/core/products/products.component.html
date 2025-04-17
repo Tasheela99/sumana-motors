@@ -1,0 +1,121 @@
+<section class="bg-white">
+  <section class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <img
+      src="/products-main-image.jpg"
+      alt="Garage background"
+      class="absolute inset-0 -z-10 h-full w-full object-cover object-center opacity-30"
+    />
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center text-white">
+      <h1 class="text-4xl font-bold tracking-tight sm:text-6xl animate-fade-in-down">Our Featured Products</h1>
+      <p class="mt-6 text-lg max-w-3xl mx-auto text-gray-300 animate-fade-in-up">
+        Top quality parts and accessories, handpicked for your vehicle.
+      </p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 my-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Product Card 1 -->
+      <div class="relative bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+        <!-- Sale Badge -->
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">20% OFF</span>
+
+        <img src="https://source.unsplash.com/600x400/?car,engine" alt="Product" class="h-48 w-full object-cover">
+
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-800">High Performance Engine</h3>
+          <p class="text-gray-500 text-sm mt-1">Powerful and efficient — made for speed lovers.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-indigo-600 font-bold text-lg">$319.00</span>
+              <span class="text-gray-400 line-through text-sm ml-2">$399.00</span>
+            </div>
+            <span class="text-yellow-400 text-sm">★★★★☆</span>
+          </div>
+          <a
+            [routerLink]="['/product', '1']"
+            class="mt-4 inline-block w-full rounded-md bg-indigo-600 px-4 py-2 text-center text-white font-semibold hover:bg-indigo-500 transition"
+          >
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="relative bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+        <!-- Sale Badge -->
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">10% OFF</span>
+
+        <img src="https://source.unsplash.com/600x400/?car,brakes" alt="Product" class="h-48 w-full object-cover">
+
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-800">Premium Brake Pads</h3>
+          <p class="text-gray-500 text-sm mt-1">Reliable, safe, and made for smooth stops.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-indigo-600 font-bold text-lg">$80.99</span>
+              <span class="text-gray-400 line-through text-sm ml-2">$89.99</span>
+            </div>
+            <span class="text-yellow-400 text-sm">★★★★★</span>
+          </div>
+          <a
+            [routerLink]="['/product', '2']"
+            class="mt-4 inline-block w-full rounded-md bg-indigo-600 px-4 py-2 text-center text-white font-semibold hover:bg-indigo-500 transition"
+          >
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+        <!-- No Sale Badge -->
+
+        <img src="https://source.unsplash.com/600x400/?car,oil" alt="Product" class="h-48 w-full object-cover">
+
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-800">Synthetic Engine Oil</h3>
+          <p class="text-gray-500 text-sm mt-1">Boosts engine life and performance.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-indigo-600 font-bold text-lg">$29.99</span>
+            <span class="text-yellow-400 text-sm">★★★★☆</span>
+          </div>
+          <a
+            [routerLink]="['/product', '3']"
+            class="mt-4 inline-block w-full rounded-md bg-indigo-600 px-4 py-2 text-center text-white font-semibold hover:bg-indigo-500 transition"
+          >
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="relative bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+        <!-- Sale Badge -->
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">15% OFF</span>
+
+        <img src="https://source.unsplash.com/600x400/?car,battery" alt="Product" class="h-48 w-full object-cover">
+
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-800">Long Life Car Battery</h3>
+          <p class="text-gray-500 text-sm mt-1">Durable, dependable and ready for all seasons.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div>
+              <span class="text-indigo-600 font-bold text-lg">$126.65</span>
+              <span class="text-gray-400 line-through text-sm ml-2">$149.00</span>
+            </div>
+            <span class="text-yellow-400 text-sm">★★★★★</span>
+          </div>
+          <a
+            [routerLink]="['/product', '4']"
+            class="mt-4 inline-block w-full rounded-md bg-indigo-600 px-4 py-2 text-center text-white font-semibold hover:bg-indigo-500 transition"
+          >
+            View Details
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,77 @@
+<nav class="bg-gray-800 sticky z-50 top-0">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 justify-between items-center">
+
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <h2 class="text-2xl text-white font-bold">#SumanaMotors</h2>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden sm:flex space-x-4">
+        <a
+          routerLink="/home"
+          routerLinkActive="bg-gray-900 text-white"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+        >Home</a>
+        <a
+          routerLink="/about"
+          routerLinkActive="bg-gray-900 text-white"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+        >About</a>
+        <a
+          routerLink="/products"
+          routerLinkActive="bg-gray-900 text-white"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+        >Products</a>
+        <a
+          routerLink="/contact"
+          routerLinkActive="bg-gray-900 text-white"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+        >Contacts</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="sm:hidden">
+        <button (click)="toggleMenu()" class="text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-md focus:outline-none">
+          <svg *ngIf="!menuOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg *ngIf="menuOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="menuOpen" class="sm:hidden px-2 pt-2 pb-3 space-y-1">
+    <a
+      routerLink="/home"
+      routerLinkActive="bg-gray-900 text-white"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+    >Home</a>
+    <a
+      routerLink="/about"
+      routerLinkActive="bg-gray-900 text-white"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+    >About</a>
+    <a
+      routerLink="/products"
+      routerLinkActive="bg-gray-900 text-white"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+    >Products</a>
+    <a
+      routerLink="/contact"
+      routerLinkActive="bg-gray-900 text-white"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+    >Contacts</a>
+  </div>
+</nav>
